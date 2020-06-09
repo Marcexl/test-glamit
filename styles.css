@@ -1,0 +1,375 @@
+/*
+ * mixed by Marcexl
+ * version 09062020
+ * estilos - test - GLAMIT
+ *
+ */
+
+*{
+	padding:0; 
+	margin:0; 
+}
+
+body,html{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin:0 auto;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat:no-repeat; 
+  background: #FAFAFA;
+}
+
+/* general */
+a,
+p,
+header,
+footer,
+nav,
+div,
+input,
+textarea,
+select,
+h1,
+h2,
+h3,
+h4,
+span,
+label,
+button{
+  transition:all .5s;
+  -webkit-transition:all .5s;
+  -moz-transition:all .5s;
+  -o-transition:all .5s;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+  list-style-position: inside;
+}
+
+/* header */
+header{
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	background: #100217E6;
+	height: 100px;
+	position: fixed;
+	-webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.3);
+	-o-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.3);
+}
+
+.logo{
+	margin: 0 auto;
+	margin-top: 18px;
+	width: 206px;
+}
+
+.logo > img{
+	width: 100%;
+}
+
+.menu{
+	margin-top: 10px;
+	width: 100%;
+	display: block;
+}
+
+.menu > ul {
+	display: flex;
+	justify-content: center;
+}
+
+.menu > ul > li{
+	margin: 0 80px;
+}
+
+.menu > ul > li > a{
+	text-decoration: none;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+	color: #FAFAFA;
+}
+.active{
+	font-weight: bold;
+}
+
+.main-icons{
+	position: absolute;
+	right: 40px;
+	top: 27px;
+	display:flex;
+	justify-content: center;
+}
+
+.main-icons > span{
+	margin: 0 3px;
+	display: block;
+	width: 26px;
+	height: 26px;
+}
+.main-icons > .i-search{
+	background:url(img/busqueda.png) no-repeat;
+}
+
+.main-icons > .i-user{
+	background:url(img/usuario.png) no-repeat;
+	background-position: 3px 0;
+}
+
+.main-icons > .i-cart{
+	background:url(img/carrito.png) no-repeat;
+}
+
+/* section */
+section{
+	margin-top: 100px;
+}
+
+.container{
+	padding: 40px 120px;
+	box-sizing: border-box; 
+	display:table;
+    width: 100%;
+}
+
+aside{
+	width: 260px;
+	display: table-cell;
+	vertical-align: top;
+}
+
+.a-title{
+	color: #030B1C;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: left;
+	display: block;
+	width: 100%;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #030B1C;
+}
+
+.a-filter{
+	padding: 15px 0;
+	color: #030B1C;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.a-category{
+	background:#E4E8EE;
+	display: block;
+	width: 100%;
+	padding: 5px 10px;
+	color: #030B1C;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.a-c-menu{
+	padding: 5px 0;
+}
+.a-c-menu > li{
+	padding: 3px 10px;
+}
+.a-c-menu > li > a{
+	color: #030B1C;
+	font-size: 16px;
+	text-align: left;
+	text-decoration:none;
+}
+
+/* items cart*/
+.c-container{
+	vertical-align: top;
+	display: table-cell;
+	/*padding: 0 15px;*/
+}
+
+.c-row{
+	display: table;
+}
+
+.c-item{
+	display:table-cell;
+	vertical-align: middle;
+	width: 33.33%;
+}
+.c-pic{
+	margin:0 15px;
+	border-bottom:1px solid #030B1C;
+}
+
+.c-pic > img{
+	width: 100%;
+	min-width: 260px;
+}
+.c-i-price,
+.c-i-title{
+	font-size: 16px;
+	font-weight: normal;
+	padding:3px 15px;
+}
+
+.c-i-price{
+	font-weight: bold;
+}
+
+/* footer */
+footer{
+	width: 100%;
+	background: #100217E6;
+		-webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.3);
+	-o-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.3);
+	height: 60px;
+}
+
+.footer-items > ul{
+	padding: 20px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.footer-items > ul > li{
+	display: inline-block;
+	margin: 0 80px;
+}
+.footer-items > ul > li > a{
+	color: #FAFAFA;
+	text-decoration:none;
+	font-size: 16px;
+}
+/* menu icon */
+.navbar-menu-icon{
+  display: none;
+  position: absolute; 
+  left:15px;
+  top:15px;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-menu-icon > i{
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+@media screen and (max-width: 1336px){
+	.container{
+		padding: 60px 40px;
+	}
+}
+
+@media screen and (max-width: 1240px){
+	.menu > ul > li,
+	.footer-items > ul > li{
+		margin: 0 40px;
+	}
+	.c-pic > img{
+		min-width: 200px;
+	}	
+}
+
+@media screen and (max-width: 967px){
+	.container {
+    	padding: 30px 15px;
+	}
+	.c-pic > img{
+		min-width: 150px;
+	}
+	.menu > ul > li,
+	.footer-items > ul > li{
+		margin: 0 15px;
+	}
+}	
+
+@media screen and (max-width: 840px){
+	header{
+		height: 70px;
+	}
+	.logo{
+		margin-top: 25px;
+		width: 132px;
+	}
+	.menu{
+		position: fixed;
+		width: 260px;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		margin-left: -100%;
+	}
+	.footer-items > ul,
+	.menu > ul {
+		display: block;
+		padding: 0;
+	}
+	.footer-items > ul{
+		padding: 10px 0;
+	}
+	.footer-items > ul > li,
+	.menu > ul > li{
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+
+	.footer-items > ul > li,
+	.footer-items > ul > li > a{
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+	.footer-items > ul > li{
+		margin: 8px 0;
+	}
+	
+	.main-icons{
+		top:23px;
+		right: 15px;
+	}
+
+	.a-filter,
+	.a-category,
+	.a-c-menu,
+	.main-icons > .i-search,
+	.main-icons > .i-user{
+		display: none;
+	}
+
+	.navbar-menu-icon{
+		display: block;
+	}
+
+	.container{
+		padding: 0 15px;
+	}
+
+	aside,
+	.c-container,
+	.c-pic,
+	.c-item,
+	.c-row{
+		display: block;
+		width: 100%;
+	}
+	
+	.c-pic{
+		margin: 0;
+	}
+	footer{
+		height: auto;
+	}
+}
